@@ -1,0 +1,13 @@
+<html>
+    <title>LIST-PAGE</title>
+    <body>
+        list of all objects<br>
+        {% for q in query %}
+        <ul>
+        <li>
+        {{ q.name }} - {{ q.email}}
+        </li>
+        </ul>
+        {% endfor %}
+    </body>
+</html>

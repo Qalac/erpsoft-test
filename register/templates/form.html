@@ -1,0 +1,14 @@
+<html>
+    <title>FORM-PAGE</title>
+    <body>
+    <div align='center'>
+    <form method='POST'>{% csrf_token %}
+    name: {{ form.name }}<br>
+    <p></p>
+    email: {{ form.email }}<br>
+    <p></p>
+    <button type='button' value='submit'>submit</button>
+    </form>
+    </div>
+    </body>
+</html>
